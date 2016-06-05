@@ -35,7 +35,8 @@ var main = function() {
 
 		$('.equals-btn').click(function() {equalsPressed()});
 		$('.clear-btn').click(function() {clearNumber()});
-	} else {
+
+
 		$('.1').on("tap", function(e) {addToString('1')});
 		$('.2').on("tap", function(e) {addToString('2')});
 		$('.3').on("tap", function(e) {addToString('3')});
@@ -57,6 +58,10 @@ var main = function() {
 
 		$('.equals-btn').on("tap", function(e) {equalsPressed()});
 		$('.clear-btn').on("tap", function(e) {clearNumber()});
+
+		
+	} else {
+
 	}
 
 	displayToScreen();
