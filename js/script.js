@@ -13,9 +13,6 @@ var main = function() {
 		isMobile = false;
 	}
 
-	if(isMobile === false) {
-
-
 		$('.1').on("touchend", function(e) {addToString('1')});
 		$('.2').on("touchend", function(e) {addToString('2')});
 		$('.3').on("touchend", function(e) {addToString('3')});
@@ -39,7 +36,7 @@ var main = function() {
 		$('.clear-btn').on("touchend", function(e) {clearNumber()});
 
 
-		
+
 		/*$('.1').click(function() {addToString('1')});
 		$('.2').click(function() {addToString('2')});
 		$('.3').click(function() {addToString('3')});
@@ -61,10 +58,6 @@ var main = function() {
 
 		$('.equals-btn').click(function() {equalsPressed()});
 		$('.clear-btn').click(function() {clearNumber()});*/
-
-	} else {
-
-	}
 
 	displayToScreen();
 }
