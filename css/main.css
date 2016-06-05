@@ -133,7 +133,7 @@ a {
 	}
 }
 
-@media only screen and (max-width: 760px) {
+@media screen and (max-width: 800px) {
 	#is-mobile {
 		display: none;
 	}
