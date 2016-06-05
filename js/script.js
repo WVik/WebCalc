@@ -7,13 +7,13 @@ var total = 0.0;
 var isMobile = false;
 
 var main = function() {
-	if($('#is-mobile').css('display') === 'none'){
+	if($('#is-mobile').css('display') == 'none'){
 		isMobile = true;
 	} else {
 		isMobile = false;
 	}
 
-		$('.number-holder .1.btn').on('touchend', function() {addToString('1')});
+		$('.number-holder .1.btn').on('tap', function() {addToString('1')});
 		$('.2').on("touchend", function() {addToString('2')});
 		$('.3').on("touchend", function() {addToString('3')});
 		$('.4').on("touchend", function() {addToString('4')});
