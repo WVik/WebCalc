@@ -13,7 +13,7 @@ var main = function() {
 		isMobile = false;
 	}
 
-		$('.numberholder .1.btn').on("touchend", function() {addToString('1')});
+		$('.number-holder .1.btn').on("touchend", function() {addToString('1')});
 		$('.2').on("touchend", function() {addToString('2')});
 		$('.3').on("touchend", function() {addToString('3')});
 		$('.4').on("touchend", function() {addToString('4')});
