@@ -14,27 +14,6 @@ var main = function() {
 	}
 
 	if(isMobile === false) {
-		$('.1').click(function() {addToString('1')});
-		$('.2').click(function() {addToString('2')});
-		$('.3').click(function() {addToString('3')});
-		$('.4').click(function() {addToString('4')});
-		$('.5').click(function() {addToString('5')});
-		$('.6').click(function() {addToString('6')});
-		$('.7').click(function() {addToString('7')});
-		$('.8').click(function() {addToString('8')});
-		$('.9').click(function() {addToString('9')});
-		$('.0').click(function() {addToString('0')});
-		$('.decimal').click(function() {addToString('.')});
-
-		$('.negative').click(function() {makeNegative()});
-
-		$('.add-btn').click(function() {operatorPress('+')});
-		$('.subtract-btn').click(function() {operatorPress('-')});
-		$('.divide-btn').click(function() {operatorPress('/')});
-		$('.multiply-btn').click(function() {operatorPress('X')});
-
-		$('.equals-btn').click(function() {equalsPressed()});
-		$('.clear-btn').click(function() {clearNumber()});
 
 
 		$('.1').on("touchend", function(e) {addToString('1')});
@@ -59,6 +38,29 @@ var main = function() {
 		$('.equals-btn').on("touchend", function(e) {equalsPressed()});
 		$('.clear-btn').on("touchend", function(e) {clearNumber()});
 
+
+		
+		$('.1').click(function() {addToString('1')});
+		$('.2').click(function() {addToString('2')});
+		$('.3').click(function() {addToString('3')});
+		$('.4').click(function() {addToString('4')});
+		$('.5').click(function() {addToString('5')});
+		$('.6').click(function() {addToString('6')});
+		$('.7').click(function() {addToString('7')});
+		$('.8').click(function() {addToString('8')});
+		$('.9').click(function() {addToString('9')});
+		$('.0').click(function() {addToString('0')});
+		$('.decimal').click(function() {addToString('.')});
+
+		$('.negative').click(function() {makeNegative()});
+
+		$('.add-btn').click(function() {operatorPress('+')});
+		$('.subtract-btn').click(function() {operatorPress('-')});
+		$('.divide-btn').click(function() {operatorPress('/')});
+		$('.multiply-btn').click(function() {operatorPress('X')});
+
+		$('.equals-btn').click(function() {equalsPressed()});
+		$('.clear-btn').click(function() {clearNumber()});
 
 	} else {
 
