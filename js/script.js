@@ -5,7 +5,7 @@ var y = 0.0;
 var total = 0.0;
 
 var main = function() {
-	if(screen.width >= 900) {
+	if($(window).width() >= 900) {
 		$('.1').click(function() {addToString('1')});
 		$('.2').click(function() {addToString('2')});
 		$('.3').click(function() {addToString('3')});
