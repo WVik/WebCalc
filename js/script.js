@@ -5,7 +5,7 @@ var y = 0.0;
 var total = 0.0;
 
 var main = function() {
-	if(screen.width >= 750) {
+	if(screen.width >= 900) {
 		$('.1').click(function() {addToString('1')});
 		$('.2').click(function() {addToString('2')});
 		$('.3').click(function() {addToString('3')});
@@ -28,27 +28,27 @@ var main = function() {
 		$('.equals-btn').click(function() {equalsPressed()});
 		$('.clear-btn').click(function() {clearNumber()});
 	} else {
-		$('.1').on("touchend", function() {addToString('1')});
-		$('.2').on("touchend", function() {addToString('2')});
-		$('.3').on("touchend", function() {addToString('3')});
-		$('.4').on("touchend", function() {addToString('4')});
-		$('.5').on("touchend", function() {addToString('5')});
-		$('.6').on("touchend", function() {addToString('6')});
-		$('.7').on("touchend", function() {addToString('7')});
-		$('.8').on("touchend", function() {addToString('8')});
-		$('.9').on("touchend", function() {addToString('9')});
-		$('.0').on("touchend", function() {addToString('0')});
-		$('.decimal').on("touchend", function() {addToString('.')});
+		$('.1').on("touchstart", function() {addToString('1')});
+		$('.2').on("touchstart", function() {addToString('2')});
+		$('.3').on("touchstart", function() {addToString('3')});
+		$('.4').on("touchstart", function() {addToString('4')});
+		$('.5').on("touchstart", function() {addToString('5')});
+		$('.6').on("touchstart", function() {addToString('6')});
+		$('.7').on("touchstart", function() {addToString('7')});
+		$('.8').on("touchstart", function() {addToString('8')});
+		$('.9').on("touchstart", function() {addToString('9')});
+		$('.0').on("touchstart", function() {addToString('0')});
+		$('.decimal').on("touchstart", function() {addToString('.')});
 
-		$('.negative').on("touchend", function() {makeNegative()});
+		$('.negative').on("touchstart", function() {makeNegative()});
 
-		$('.add-btn').on("touchend", function() {operatorPress('+')});
-		$('.subtract-btn').on("touchend", function() {operatorPress('-')});
-		$('.divide-btn').on("touchend", function() {operatorPress('/')});
-		$('.multiply-btn').on("touchend", function() {operatorPress('X')});
+		$('.add-btn').on("touchstart", function() {operatorPress('+')});
+		$('.subtract-btn').on("touchstart", function() {operatorPress('-')});
+		$('.divide-btn').on("touchstart", function() {operatorPress('/')});
+		$('.multiply-btn').on("touchstart", function() {operatorPress('X')});
 
-		$('.equals-btn').on("touchend", function() {equalsPressed()});
-		$('.clear-btn').on("touchend", function() {clearNumber()});
+		$('.equals-btn').on("touchstart", function() {equalsPressed()});
+		$('.clear-btn').on("touchstart", function() {clearNumber()});
 	}
 
 	displayToScreen();
