@@ -5,27 +5,51 @@ var y = 0.0;
 var total = 0.0;
 
 var main = function() {
-	$('.1').click(function() {addToString('1')});
-	$('.2').click(function() {addToString('2')});
-	$('.3').click(function() {addToString('3')});
-	$('.4').click(function() {addToString('4')});
-	$('.5').click(function() {addToString('5')});
-	$('.6').click(function() {addToString('6')});
-	$('.7').click(function() {addToString('7')});
-	$('.8').click(function() {addToString('8')});
-	$('.9').click(function() {addToString('9')});
-	$('.0').click(function() {addToString('0')});
-	$('.decimal').click(function() {addToString('.')});
+	if(screen.width >= 750) {
+		$('.1').click(function() {addToString('1')});
+		$('.2').click(function() {addToString('2')});
+		$('.3').click(function() {addToString('3')});
+		$('.4').click(function() {addToString('4')});
+		$('.5').click(function() {addToString('5')});
+		$('.6').click(function() {addToString('6')});
+		$('.7').click(function() {addToString('7')});
+		$('.8').click(function() {addToString('8')});
+		$('.9').click(function() {addToString('9')});
+		$('.0').click(function() {addToString('0')});
+		$('.decimal').click(function() {addToString('.')});
 
-	$('.negative').click(function() {makeNegative()});
+		$('.negative').click(function() {makeNegative()});
 
-	$('.add-btn').click(function() {operatorPress('+')});
-	$('.subtract-btn').click(function() {operatorPress('-')});
-	$('.divide-btn').click(function() {operatorPress('/')});
-	$('.multiply-btn').click(function() {operatorPress('X')});
+		$('.add-btn').click(function() {operatorPress('+')});
+		$('.subtract-btn').click(function() {operatorPress('-')});
+		$('.divide-btn').click(function() {operatorPress('/')});
+		$('.multiply-btn').click(function() {operatorPress('X')});
 
-	$('.equals-btn').click(function() {equalsPressed()});
-	$('.clear-btn').click(function() {clearNumber()});
+		$('.equals-btn').click(function() {equalsPressed()});
+		$('.clear-btn').click(function() {clearNumber()});
+	} else {
+		$('.1').on("tap", function() {addToString('1')});
+		$('.2').on("tap", function() {addToString('2')});
+		$('.3').on("tap", function() {addToString('3')});
+		$('.4').on("tap", function() {addToString('4')});
+		$('.5').on("tap", function() {addToString('5')});
+		$('.6').on("tap", function() {addToString('6')});
+		$('.7').on("tap", function() {addToString('7')});
+		$('.8').on("tap", function() {addToString('8')});
+		$('.9').on("tap", function() {addToString('9')});
+		$('.0').on("tap", function() {addToString('0')});
+		$('.decimal').on("tap", function() {addToString('.')});
+
+		$('.negative').on("tap", function() {makeNegative()});
+
+		$('.add-btn').on("tap", function() {operatorPress('+')});
+		$('.subtract-btn').on("tap", function() {operatorPress('-')});
+		$('.divide-btn').on("tap", function() {operatorPress('/')});
+		$('.multiply-btn').on("tap", function() {operatorPress('X')});
+
+		$('.equals-btn').on("tap", function() {equalsPressed()});
+		$('.clear-btn').on("tap", function() {clearNumber()});
+	}
 
 	displayToScreen();
 }
