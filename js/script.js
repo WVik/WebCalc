@@ -7,9 +7,13 @@ var total = 0.0;
 var isMobile = false;
 
 var main = function() {
-	if($('#is-mobile').css('display') == 'none') isMobile = true;
+	if($('#is-mobile').css('display') === 'none'){
+		isMobile = true;
+	} else {
+		isMobile = false;
+	}
 
-	if(!isMobile) {
+	if(isMobile === false) {
 		$('.1').click(function() {addToString('1')});
 		$('.2').click(function() {addToString('2')});
 		$('.3').click(function() {addToString('3')});
