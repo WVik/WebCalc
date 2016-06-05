@@ -13,7 +13,7 @@ var main = function() {
 		isMobile = false;
 	}
 
-		$('.number-holder .1.btn').on("touchend", function() {addToString('1')});
+		$('.number-holder .1.btn').on('touchend', function() {addToString('1')});
 		$('.2').on("touchend", function() {addToString('2')});
 		$('.3').on("touchend", function() {addToString('3')});
 		$('.4').on("touchend", function() {addToString('4')});
@@ -37,7 +37,7 @@ var main = function() {
 
 
 
-		/*$('.1').click(function() {addToString('1')});
+		$('.1').click(function() {addToString('1')});
 		$('.2').click(function() {addToString('2')});
 		$('.3').click(function() {addToString('3')});
 		$('.4').click(function() {addToString('4')});
@@ -57,7 +57,7 @@ var main = function() {
 		$('.multiply-btn').click(function() {operatorPress('X')});
 
 		$('.equals-btn').click(function() {equalsPressed()});
-		$('.clear-btn').click(function() {clearNumber()});*/
+		$('.clear-btn').click(function() {clearNumber()});
 
 	displayToScreen();
 }
