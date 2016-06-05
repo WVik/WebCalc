@@ -28,27 +28,27 @@ var main = function() {
 		$('.equals-btn').click(function() {equalsPressed()});
 		$('.clear-btn').click(function() {clearNumber()});
 	} else {
-		$('.1').on("touchstart", function(e) {addToString('1')});
-		$('.2').on("touchstart", function(e) {addToString('2')});
-		$('.3').on("touchstart", function(e) {addToString('3')});
-		$('.4').on("touchstart", function(e) {addToString('4')});
-		$('.5').on("touchstart", function(e) {addToString('5')});
-		$('.6').on("touchstart", function(e) {addToString('6')});
-		$('.7').on("touchstart", function(e) {addToString('7')});
-		$('.8').on("touchstart", function(e) {addToString('8')});
-		$('.9').on("touchstart", function(e) {addToString('9')});
-		$('.0').on("touchstart", function(e) {addToString('0')});
-		$('.decimal').on("touchstart", function(e) {addToString('.')});
+		$('.1').on("tap", function(e) {addToString('1')});
+		$('.2').on("tap", function(e) {addToString('2')});
+		$('.3').on("tap", function(e) {addToString('3')});
+		$('.4').on("tap", function(e) {addToString('4')});
+		$('.5').on("tap", function(e) {addToString('5')});
+		$('.6').on("tap", function(e) {addToString('6')});
+		$('.7').on("tap", function(e) {addToString('7')});
+		$('.8').on("tap", function(e) {addToString('8')});
+		$('.9').on("tap", function(e) {addToString('9')});
+		$('.0').on("tap", function(e) {addToString('0')});
+		$('.decimal').on("tap", function(e) {addToString('.')});
 
-		$('.negative').on("touchstart", function(e) {makeNegative()});
+		$('.negative').on("tap", function(e) {makeNegative()});
 
-		$('.add-btn').on("touchstart", function(e) {operatorPress('+')});
-		$('.subtract-btn').on("touchstart", function(e) {operatorPress('-')});
-		$('.divide-btn').on("touchstart", function(e) {operatorPress('/')});
-		$('.multiply-btn').on("touchstart", function(e) {operatorPress('X')});
+		$('.add-btn').on("tap", function(e) {operatorPress('+')});
+		$('.subtract-btn').on("tap", function(e) {operatorPress('-')});
+		$('.divide-btn').on("tap", function(e) {operatorPress('/')});
+		$('.multiply-btn').on("tap", function(e) {operatorPress('X')});
 
-		$('.equals-btn').on("touchstart", function(e) {equalsPressed()});
-		$('.clear-btn').on("touchstart", function(e) {clearNumber()});
+		$('.equals-btn').on("tap", function(e) {equalsPressed()});
+		$('.clear-btn').on("tap", function(e) {clearNumber()});
 	}
 
 	displayToScreen();
