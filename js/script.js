@@ -13,31 +13,6 @@ var main = function() {
 		isMobile = false;
 	}
 
-	$(document).bind('pagecreate', function() {
-		$('.1').on({'vclick' : function() {addToString('1')}});
-		$('.2').on("touchend", function() {addToString('2')});
-		$('.3').on('touchstart', function() {addToString('3')});
-		$('.4').on("touchstart", function() {addToString('4')});
-		$('.5').on("touchend", function(e) {addToString('5')});
-		$('.6').on("touchstart", function(e) {addToString('6')});
-		$('.7').on('touchend', function(e) {addToString('7')});
-		$('.8').on('touchstart', function(e) {addToString('8')});
-		$('.9').on("tap", function() {addToString('9')});
-		$('.0').on('tap', function() {addToString('0')});
-		$('.decimal').on("tap", function(e) {addToString('.')});
-
-		$('.negative').on('tap', function(e) {makeNegative()});
-
-		$('.add-btn').on("touchend", function() {operatorPress('+')});
-		$('.subtract-btn').on("touchend", function() {operatorPress('-')});
-		$('.divide-btn').on("touchend", function() {operatorPress('/')});
-		$('.multiply-btn').on("touchend", function() {operatorPress('X')});
-
-		$('.equals-btn').on("touchend", function() {equalsPressed()});
-		$('.clear-btn').on("touchend", function() {clearNumber()});
-});
-
-
 		$('.1').click(function() {addToString('1')});
 		$('.2').click(function() {addToString('2')});
 		$('.3').click(function() {addToString('3')});
