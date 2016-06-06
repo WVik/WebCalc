@@ -3,7 +3,7 @@ body {
 	box-sizing: -moz-border-box;
 	box-sizing: -ms-border-box;
 	box-sizing: border-box;
-	font-size: 20px;
+	font-size: 16px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 300;
 	background-color: #f7e7b4;
@@ -112,7 +112,7 @@ a {
 }
 
 .btn:hover {
-	font-size: 28px;
+	font-size: 22px;
 	margin-top: 10px;
 	background-color: #f2f6c3;
 }
