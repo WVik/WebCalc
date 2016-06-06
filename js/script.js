@@ -12,7 +12,6 @@ var main = function() {
 	} else {
 		isMobile = false;
 	}
-	$(document).bind('pageinit', function() {
 		$('.1').on({'vclick' : function() {addToString('1')}});
 		$('.2').on("touchend", function() {addToString('2')});
 		$('.3').on('touchstart', function() {addToString('3')});
@@ -34,8 +33,6 @@ var main = function() {
 
 		$('.equals-btn').on("touchend", function() {equalsPressed()});
 		$('.clear-btn').on("touchend", function() {clearNumber()});
-
-	});
 
 
 
@@ -169,4 +166,8 @@ var divide = function(x, y) {
 	return x / y;
 }
 
-$(document).ready(main);
+if(isMobile === false) {
+	$(document).ready(main);
+} else {
+	$(document).bind('pageinit', function() {main()});
+}
