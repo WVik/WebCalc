@@ -13,7 +13,7 @@ var main = function() {
 		isMobile = false;
 	}
 
-		$('.1').on({'tap' : function() {addToString('1')}});
+		$('.1').on({'vclick' : function() {addToString('1')}});
 		$('.2').on("touchend", function() {addToString('2')});
 		$('.3').on('touchstart', function() {addToString('3')});
 		$('.4').on("touchstart", function() {addToString('4')});
