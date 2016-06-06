@@ -21,11 +21,11 @@ var main = function() {
 		$('.6').on("touchstart", function(e) {addToString('6')});
 		$('.7').on('touchend', function(e) {addToString('7')});
 		$('.8').on('touchstart', function(e) {addToString('8')});
-		$('.9').on("touchend", function() {addToString('9')});
-		$('.0').on("touchend", function() {addToString('0')});
-		$('.decimal').on("touchend", function() {addToString('.')});
+		$('.9').on("tap", function() {addToString('9')});
+		$('.0').on('tap', function() {addToString('0')});
+		$('.decimal').on("tap", function(e) {addToString('.')});
 
-		$('.negative').on("touchend", function() {makeNegative()});
+		$('.negative').on('tap', function(e) {makeNegative()});
 
 		$('.add-btn').on("touchend", function() {operatorPress('+')});
 		$('.subtract-btn').on("touchend", function() {operatorPress('-')});
