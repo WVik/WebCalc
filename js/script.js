@@ -13,14 +13,14 @@ var main = function() {
 		isMobile = false;
 	}
 
-		$('.1').on('tap', function() {addToString('1')});
+		$('.1').on('touchend', function() {addToString('1')});
 		$('.2').on("touchend", function() {addToString('2')});
-		$('.3').on("touchend", function() {addToString('3')});
-		$('.4').on("touchend", function() {addToString('4')});
-		$('.5').on("touchend", function() {addToString('5')});
-		$('.6').on("touchend", function() {addToString('6')});
-		$('.7').on("touchend", function() {addToString('7')});
-		$('.8').on("touchend", function() {addToString('8')});
+		$('.3').on('touchstart', function() {addToString('3')});
+		$('.4').on("touchstart", function() {addToString('4')});
+		$('.5').on("touchend", function(e) {addToString('5')});
+		$('.6').on("touchstart", function(e) {addToString('6')});
+		$('.7').on('touchend', function(e) {addToString('7')});
+		$('.8').on('touchstart', function(e) {addToString('8')});
 		$('.9').on("touchend", function() {addToString('9')});
 		$('.0').on("touchend", function() {addToString('0')});
 		$('.decimal').on("touchend", function() {addToString('.')});
