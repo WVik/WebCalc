@@ -169,5 +169,5 @@ var divide = function(x, y) {
 //if(isMobile === false) {
 //	$(document).ready(main);
 //} else {
-	$(document).bind('pageinit', function() {main()});
+	$(document).bind('pagecreate', function() {main()});
 //}
