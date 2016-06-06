@@ -166,8 +166,8 @@ var divide = function(x, y) {
 	return x / y;
 }
 
-if(isMobile === false) {
-	$(document).ready(main);
-} else {
+//if(isMobile === false) {
+//	$(document).ready(main);
+//} else {
 	$(document).bind('pageinit', function() {main()});
-}
+//}
