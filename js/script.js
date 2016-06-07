@@ -73,6 +73,9 @@ var equalsPressed = function() {
 }
 
 var displayToScreen = function() {
+	if(displayString.length < 12) {
+		$('.display').css('font-size', "34px");
+	}
 	if(displayString.length >= 12) {
 		$('.display').css('font-size', '30px');
 	} 
