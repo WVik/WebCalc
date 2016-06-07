@@ -12,7 +12,6 @@ var main = function() {
 	} else {
 		isMobile = false;
 	}
-
 		$('.1').click(function() {addToString('1')});
 		$('.2').click(function() {addToString('2')});
 		$('.3').click(function() {addToString('3')});
@@ -74,6 +73,15 @@ var equalsPressed = function() {
 }
 
 var displayToScreen = function() {
+	if(displayString.length >= 12) {
+		$('.display').css('font-size', '30px');
+	} 
+	if (displayString.length >= 15 ) {
+		$('.display').css('font-size', '26px');
+	}
+	if(displayString.length >= 17) {
+		$('.display').css('font-size', '22px');
+	}
 	document.getElementById('screen').innerHTML = displayString;
 }
 
@@ -100,21 +108,23 @@ var makeNegative = function() {
 }
 
 var addToString = function(string) {
-	if(displayString.includes('.') && string === '.') {
-		displayString = displayString;
-		displayToScreen();
-	} else {
-		if(displayString === '0') {
-			if(string === '.') {
-				displayString = '0.'
-				displayToScreen();
+	if(displayString.length < 20) {
+		if(displayString.includes('.') && string === '.') {
+			displayString = displayString;
+			displayToScreen();
+		} else {
+			if(displayString === '0') {
+				if(string === '.') {
+					displayString = '0.'
+					displayToScreen();
+				} else {
+					displayString = string;
+					displayToScreen();
+				}
 			} else {
-				displayString = string;
+				displayString = displayString.concat(string);
 				displayToScreen();
 			}
-		} else {
-			displayString = displayString.concat(string);
-			displayToScreen();
 		}
 	}
 }
