@@ -12,6 +12,8 @@ var main = function() {
 	} else {
 		isMobile = false;
 	}
+		$('.1').on('touchend', function() {addToString('1')});
+
 		$('.1').click(function() {addToString('1')});
 		$('.2').click(function() {addToString('2')});
 		$('.3').click(function() {addToString('3')});
@@ -156,4 +158,8 @@ var divide = function(x, y) {
 	return x / y;
 }
 
-$(document).ready(main);
+if(!isMobile) {
+	$(document).ready(main);
+} else if (isMobile) {
+	$(document).bind('pagecreate', function() {main()});
+}
