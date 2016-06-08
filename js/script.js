@@ -12,7 +12,6 @@ var main = function() {
 	} else {
 		isMobile = false;
 	}
-		$('.1').on('tap', function() {addToString('1')});
 
 		$('.1').click(function() {addToString('1')});
 		$('.2').click(function() {addToString('2')});
@@ -158,8 +157,4 @@ var divide = function(x, y) {
 	return x / y;
 }
 
-//if(!isMobile) {
-	//$(document).ready(main);
-//} else if (isMobile) {
-	$(document).bind('pagecreate', function() {main()});
-//}
+$(document).ready(main);
